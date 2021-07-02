@@ -20,10 +20,10 @@ app.set('view engine', "ejs");
 // app.set('views', path.resolve(__dirname, 'views/ejs'));
 
 // Load Assets
-app.use("\css", express.static(path.resolve(__dirname, "assets/css")));
+app.use("/css", express.static(path.resolve(__dirname, "assets/css")));
 // css/style.css
-app.use('\js', express.static(path.resolve(__dirname, "assets/js")));
-app.use('\img', express.static(path.resolve(__dirname, "assets/img")));
+app.use('/js', express.static(path.resolve(__dirname, "assets/js")));
+app.use('/img', express.static(path.resolve(__dirname, "assets/img")));
 
 app.get('/', (req, res) => {
     // res.send("Crud Application");
