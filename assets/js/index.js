@@ -15,7 +15,7 @@ $("#update_user").submit(function(event){
     })
 
     var request = {
-        "url" : `http://crudappexpress786.herokuapp.com/api/users/${data.id}`,
+        "url" : `https://crudappexpress786.herokuapp.com/api/users/${data.id}`,
         "method" : "PUT",
         "data" : data
     }
@@ -32,7 +32,7 @@ if(window.location.pathname == "/"){
         var id = $(this).attr("data-id")
 
         var request = {
-            "url" : `http://crudappexpress786.herokuapp.com/api/users/${id}`,
+            "url" : `https://crudappexpress786.herokuapp.com/api/users/${id}`,
             "method" : "DELETE"
         }
 
