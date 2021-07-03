@@ -15,7 +15,7 @@ $("#update_user").submit(function(event){
     })
 
     var request = {
-        "url" : `https://crudappexpress786.herokuapp.com/api/users/${data.id}`,
+        "url" : `http://crudappexpress786.herokuapp.com/api/users/${data.id}`,
         "method" : "PUT",
         "data" : data
     }
